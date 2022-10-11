@@ -6,4 +6,7 @@
 <h1>LogonTracer</h1>
 </div>
 
-[core](https://github.com/logon-tracer/core) | [Documentation]()
+<div align="center">
+  <a href="https://github.com/logon-tracer/core">core</a> |
+  <a href="https://github.com/logon-tracer/docs">Documentation</a>
+</div>
