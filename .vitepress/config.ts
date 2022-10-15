@@ -36,25 +36,46 @@ export default defineConfig({
             { icon: 'discord', link: discord },
             { icon: 'github', link: github },
         ],
+        localeLinks: {
+          text: 'English',
+          items: [
+            { text: '简体中文', link: 'https://cn-logon-tracer.elonehoo.xyz/guide/' },
+          ],
+        },
         footer: {
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2022-PRESENT Elone Hoo',
         },
         nav: [
             { text: 'Guide', link: '/guide/' },
+            { text: 'API', link: '/api/' },
             { text: 'Config', link: '/config/' },
             {
                 text: `v${version}`,
                 items: [
                     {
-                        text: '版本发布',
+                        text: 'Release Notes ',
                         link: releases,
                     },
                 ],
             },
         ],
         sidebar: {
-            '/':[]
+            '/':[
+              {
+                text:'Guide',
+                items:[
+                  {
+                    text:'why LogonTracer',
+                    link:'/guide/why'
+                  },
+                  {
+                    text:'Getting Started',
+                    link:'/guide/'
+                  },
+                ]
+              }
+            ]
         }
     },
 })
