@@ -42,6 +42,7 @@ export default defineConfig({
         },
         nav: [
             { text: 'Guide', link: '/guide/' },
+            { text: 'Config', link: '/config/' },
             {
                 text: `v${version}`,
                 items: [
