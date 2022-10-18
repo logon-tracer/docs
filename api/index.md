@@ -92,3 +92,17 @@ AlarmLogHelper.getPrintLogInstance(false).error(MarkerFactory.getMarker("test"),
 AlarmLogHelper.getPrintLogInstance(false).error(MarkerFactory.getMarker("test"), "123:{}:{}:{}", 456, 789, "111");
 AlarmLogHelper.getPrintLogInstance(false).error(MarkerFactory.getMarker("test"), "123:{}:{}:{}", 456, 789, "111", new RuntimeException());
 ```
+
+## Exception
+
+### AlarmLogException
+
+This class inherits the `java.lang.Exception` class and the AlarmLogException class, that is, the warning event is triggered when the log event is thrown.
+
+### AlarmLogRuntimeException
+
+This class inherits the `java.lang.RuntimeException` class and the AlarmLogException class, that is, when a log event is thrown, a warning event is triggered.
+
+### AlarmLogDoWarnException
+
+Implement the AlarmLogDoWarnException interface, that is, when a log event is thrown, a warning event is triggered. Note: Currently this interface also needs to be a subclass of `java.lang.Throwable`, and this restriction will be modified in the future. Since java is single inheritance, when it is inconvenient to inherit AlarmLog exceptions in the current project, you can use the method of implementing this interface.
