@@ -6,12 +6,47 @@ LogonTracer is a lightweight log monitoring framework powered by Spring.
 
 You can learn more about the rationale behind the project in the [Why LogonTracer](./why) section.
 
-## Adding Vitest to your Project
+## Adding LogonTracer to your Project
+
+You need to set Maven to have GitHub's Package permissions first
+
+1. Create a [new token](https://github.com/settings/tokens) with corresponding permissions.
+2. Set read:packages permission.
+
+![GitHub Token](/github_token_read_packages.png)
+
+3. Add `server` and list in ~/.m2/setting.xml
+
+```xml
+<server>
+  <id>github</id>
+  <username>github_username</username>
+  <password>github_token</password>
+</server>
+```
 
 With Maven
 
-```xml
+Set up the `repository` node in pom.xml
 
+```xml
+<repositories>
+  <repository>
+    <id>github</id>
+    <name>The Maven Repository on Github</name>
+    <url>https://maven.pkg.github.com/logon-tracer/core/</url>
+  </repository>
+</repositories>
+```
+
+Specific installation
+
+```xml
+<dependency>
+  <groupId>logon.tracer</groupId>
+  <artifactId>source</artifactId>
+  <version>latest version</version>
+</dependency>
 ```
 
 :::tip TIP
