@@ -91,6 +91,15 @@ export default defineConfig({
                     link:'/api/'
                   }
                 ]
+              },
+              {
+                text:'Config',
+                items:[
+                  {
+                    text:'Config Reference',
+                    link:'/config/'
+                  }
+                ]
               }
             ]
         }
