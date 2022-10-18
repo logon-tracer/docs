@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { description, discord, font, github, name, releases, twitter,} from './meta'
 
-const version = '0.0.0'
+const version = '0.0.1'
 
 export default defineConfig({
     lang: 'en-US',
@@ -72,6 +72,10 @@ export default defineConfig({
                   {
                     text:'Getting Started',
                     link:'/guide/'
+                  },
+                  {
+                    text:'Features',
+                    link:'/guide/features'
                   },
                 ]
               }

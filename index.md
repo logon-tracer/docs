@@ -18,7 +18,7 @@ hero:
         link: /guide/
       - theme: alt
         text: Features
-        link: /demo/
+        link: /guide/features
       - theme: alt
         text: why LogonTracer?
         link: /guide/why
