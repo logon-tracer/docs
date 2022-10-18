@@ -77,6 +77,19 @@ export default defineConfig({
                     text:'Features',
                     link:'/guide/features'
                   },
+                  {
+                    text:'Content of email',
+                    link:'/guide/content'
+                  },
+                ]
+              },
+              {
+                text:'API',
+                items:[
+                  {
+                    text:'API Reference',
+                    link:'/api/'
+                  }
                 ]
               }
             ]
