@@ -31,6 +31,34 @@ spring:
         - java.lang.Exception
 ```
 
+### Configuration properties
+
+#### Warn configuration properties
+
+| Name | Type | Default | Description	 |
+|---|---|---|---|
+| do-warn-exception | `List<String>` | null | global detection warning exception |
+| max-retry-times | `Integer` | 3 | maximum number of retries |
+| retry-sleep-millis | `Integer` | 1000 | The retry time for sending failure (unit: milliseconds) defaults to one second |
+| print-stack-trace | `Boolean` | false | Whether to display stack information, false will not display stack information |
+| simple-warn-info | `Boolean` | false | Whether to use simple mail style, `false` will not use simple style |
+| warn-exception-extend | `Boolean` | false | Whether to enable the warning exception extension, `false` will use the configured value of `do-warn-exception` to detect the warning exception globally by default |
+| mail | `Object` | new MailConfig() | mail configuration object |
+
+#### Mail configuration properties
+
+| Name | Type | Default | Description	 |
+|---|---|---|---|
+| enabled | `Boolean` | false | Enable error log alarms. By default, the alarm function is not enabled. |
+| smtpHost | `String` | null | Mail server address, for example: `smtp.163.com` |
+| smtpPort | `String` | null | Mail server protocol port number, for example: `465` |
+| to | `String` | null | Email recipient username, if there are multiple recipients, use `,` to separate |
+| from | `String` | null | Email sender username |
+| username | `String` | null | Mail server username |
+| password | `String` | null | Mail server password |
+| ssl | `Boolean` | true | Whether to enable secure ssl connection, ssl secure connection is enabled by default |
+| debug | `Boolean` | false | Whether to enable the debug function, the debug function is disabled by default |
+
 ## Log Framework
 
 ### Log4j
