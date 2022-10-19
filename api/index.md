@@ -36,7 +36,7 @@ import logon.tracer.dto.AlarmMailContent;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CustomAlarmMessageContext1 implements AlarmMessageContext {
+public class CustomAlarmMessageContext implements AlarmMessageContext {
   /**
    * Customize the content sent to mail.
    *
