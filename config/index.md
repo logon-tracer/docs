@@ -6,6 +6,16 @@ outline: deep
 
 ## SpringBoot Configuring
 
+SpringBoot can directly install SpringBoot's express package.
+
+```xml
+<dependency>
+  <groupId>logon.tracer</groupId>
+  <artifactId>logon-tracer-spring-boot-starter</artifactId>
+  <version>latest version</version>
+</dependency>
+```
+
 ### System global configuration
 
 ```yaml
