@@ -43,6 +43,8 @@ spring:
 
 ### Configuration properties
 
+> Basic description for all properties
+
 #### Warn configuration properties
 
 | Name | Type | Default | Description	 |
