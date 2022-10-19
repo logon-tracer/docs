@@ -6,7 +6,7 @@ Just follow the steps below to create your own email format
 
 ## Create a `CustomAlarmMessageContext` class
 
-- Implement `CustomAlarmMessageContext` to `CustomAlarmMessageContext`
+- Implement `AlarmMessageContext` to `CustomAlarmMessageContext`
 
 ```java
 import logon.tracer.context.AlarmInfoContext;
