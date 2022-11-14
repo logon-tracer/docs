@@ -20,7 +20,6 @@ SpringBoot can directly install SpringBoot's express package.
 
 ```yaml
 spring:
-  spring:
   alarm-log:
     warn:
       mail:
