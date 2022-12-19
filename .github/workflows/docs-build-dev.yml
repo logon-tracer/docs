@@ -27,7 +27,7 @@ jobs:
         run: pnpm run build
 
       - name: Run echo cname
-        run: echo 'logon-tracer.elonehoo.xyz' > .vitepress/dist/CNAME
+        run: echo 'logon-tracer.elonehoo.me' > .vitepress/dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
